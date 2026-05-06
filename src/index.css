@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+
+  --color-background: #1F1F1F;
+  --color-foreground: #D4D4D4;
+  
+  --color-card: #2A2A2A;
+  --color-card-foreground: #D4D4D4;
+  
+  --color-primary: #4ade80;
+  --color-primary-foreground: #1F1F1F;
+  
+  --color-secondary: #2d2d2d;
+  --color-secondary-foreground: #4ade80;
+  
+  --color-accent: #3d5a40;
+  --color-accent-foreground: #D4D4D4;
+  
+  --color-muted: #262626;
+  --color-muted-foreground: #D4D4D4;
+  
+  --color-border: #333333;
+  --color-input: #333333;
+  --color-ring: #4ade80;
+
+  --radius-lg: 1.5rem;
+  --radius-md: 1rem;
+  --radius-sm: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+:root {
+  --background: #1F1F1F;
+  --foreground: #D4D4D4;
+  --card: #2A2A2A;
+  --card-foreground: #D4D4D4;
+  --popover: #2A2A2A;
+  --popover-foreground: #D4D4D4;
+  --primary: #4ade80;
+  --primary-foreground: #1F1F1F;
+  --secondary: #2d2d2d;
+  --secondary-foreground: #4ade80;
+  --muted: #262626;
+  --muted-foreground: #8ba38b;
+  --accent: #3d5a40;
+  --accent-foreground: #D4D4D4;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #333333;
+  --input: #333333;
+  --ring: #4ade80;
+  --radius: 1rem;
+}
+
+.organic-card {
+  @apply bg-card border border-border rounded-[2rem] shadow-xl overflow-hidden;
+}
+
+.glass-panel {
+  @apply bg-card/70 backdrop-blur-md border border-white/5 shadow-2xl;
+}

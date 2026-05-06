@@ -1,0 +1,5 @@
+{
+  "name": "Planta Viva - Assistente de Cultivo",
+  "description": "Identificação de espécies, diagnóstico hídrico e detecção de doenças de plantas usando IA.",
+  "requestFramePermissions": ["camera"]
+}
