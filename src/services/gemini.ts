@@ -36,7 +36,7 @@ Retorne o resultado estritamente em formato JSON.`;
 
 export async function analyzePlantImage(base64Image: string): Promise<PlantAnalysis> {
   const response = await ai.models.generateContent({
-    model: "gemini-2.0-flash",
+    model: "gemini-2.0-flash-lite",
     contents: [
       {
         parts: [
